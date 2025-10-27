@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Credits: 0 | Premium: No"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/premium_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Unlock Premium ($4.99)"
+        app:icon="@drawable/ic_star" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buy_credits_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy 100 Credits ($0.99)"
+        app:icon="@drawable/ic_credit_card"
+        android:enabled="false" />
+
+</LinearLayout>
